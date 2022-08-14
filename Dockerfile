@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     lua-zlib-dev \
     libmemcached-dev \
-    nginx
+    nginx \
+    dos2unix
 
 # Install supervisor
 RUN apt-get install -y supervisor
@@ -47,6 +48,9 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Copy code to /var/www
 COPY --chown=www:www-data . /var/www
+
+# Convert CRLF to LF in files
+RUN find . -type f -print0 | xargs -0 dos2unix
 
 # add root to www group
 RUN chmod -R ug+w /var/www/storage
