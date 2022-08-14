@@ -68,4 +68,4 @@ After development make sure to delete `public/hot` file before running applicati
 
 ## TODO
 * Improve booking view for mobile screens
-* Cache already found routes for faster search requests
+* Cache already found trips to avoid duplicate calculations and achieve faster UX
