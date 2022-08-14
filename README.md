@@ -55,7 +55,7 @@ Development for this application is done by using Laravel Sail and WSL2
 9) Ignore errors thrown and run in new terminal window `sail composer install`
 10) Close process started by `sail up` with Ctrl+C
 11) Run `sail up` again
-12) In new terminal in project folder window run `sail artisan queue:work`
+12) In new terminal in project folder run `sail artisan queue:work`
 13) In new terminal in window run `sail artisan start-sync` to start data sync from webservice
 14) Run `sail artisan migrate` to create database tables
 15) Run `sail npm install`
