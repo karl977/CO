@@ -2,7 +2,7 @@
 
 This repository contains the solution to the Cosmos odyssey task. 
 
-[Task description](Cosmos-Odyssey excercise 2.pdf)
+[Task description](https://github.com/karl977/CO/edit/master/Cosmos-Odyssey%20excercise%202.pdf)
 
 
 ![Employee data](/public/images/solar-system.png "Employee Data title")
