@@ -52,14 +52,16 @@ Development for this application is done by using Laravel Sail and WSL2
 6) Run `chmod u+x vendor/laravel/sail/bin/sail`
 7) Configure alias for sail. Add line `alias sail='bash vendor/bin/sail'` to file `~/.bashrc`
 8) Run command `sail up`
-9) Ignore errors thrown and run in project folder `sail composer install`
+9) Ignore errors thrown and run in new terminal window `sail composer install`
 10) Close process started by `sail up` with Ctrl+C
-11) Run `sail up` again in project folder
-12) Run `sail artisan migrate` to create database tables
-13) Run `sail artisan start-sync` to start data sync from webservice
-14) Run `npm run dev`
-15) Change `0.0.0.0` to `127.0.0.1` in file `public/hot`
-16) Start developing with hot reload at `127.0.0.1`
+11) Run `sail up` again
+12) In new terminal in project folder window run `sail artisan queue:work`
+13) In new terminal in window run `sail artisan start-sync` to start data sync from webservice
+14) Run `sail artisan migrate` to create database tables
+15) Run `sail npm install`
+16) Run `sail npm run dev`
+17) Change `0.0.0.0` to `127.0.0.1` in file `public/hot`
+18) Start developing with hot reload at `127.0.0.1`
 
 NB!
 After development make sure to delete `public/hot` file before running application in production mode
